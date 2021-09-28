@@ -4,7 +4,8 @@ Voter repo for sms survey
 $ ./voteResults.sh
 
 ### Pull Results into "vote.txt"
-``` client.messages
+``` 
+client.messages
       .list({
          to: process.env.TWILIO_VOTER_NUMBER
        })
@@ -12,8 +13,9 @@ $ ./voteResults.sh
         if (err) {
         return console.error(err);
     }
-    }))); ```
+    }))); 
+    ```
     
-### Votes for 
+### Votes for Team #1
 $ sort -u -t"|" -k 1,1  vote.txt | awk -F"|" '$2==1' | wc -l
 
