@@ -5,7 +5,7 @@ Voter repo for sms survey
 
 2. Install dependencies
 ```
-$ npm install fs
+$ npm install fs twilio
 
 $ cp .env.example .env
 
