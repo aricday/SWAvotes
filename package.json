@@ -1,0 +1,26 @@
+{
+  "name": "swavotes",
+  "version": "1.0.0",
+  "description": "Voter repo for sms survey",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "js-yaml": "^4.1.0",
+    "twilio": "^3.69.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aricday/SWAvotes.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/aricday/SWAvotes/issues"
+  },
+  "homepage": "https://github.com/aricday/SWAvotes#readme"
+}

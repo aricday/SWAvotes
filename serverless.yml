@@ -1,0 +1,32 @@
+---
+frameworkVersion: "=2.44.0"
+service: swavotes
+custom:
+  stage: ${opt:stage, 'dev'}
+
+provider:
+  name: aws
+  stage: ${self:custom.stage}
+  runtime: nodejs12.x
+  region: us-east-1
+
+  role: arn:aws:iam::741218081458:role/serverless-vpc-role
+  apiKeys:
+    - ${self:custom.stage}-swavotes
+
+functions:
+  getvotes:
+    handler: app.handler
+    memorySize: 128
+    timeout: 30
+    events:
+      - http:
+          path: /swa/votes
+          private: false
+          method: get
+          cors: true
+          integration: lambda
+          response:
+            headers:
+              Content-Type: "'text/html'"
+              Cache-Control: "'max-age=5'"
