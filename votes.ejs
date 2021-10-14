@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="table.css">
+    <title>SWAvotes</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Team</th>
+          <th>Votes</th>
+        </tr>
+      </thead>
+      <% for (let i = 1; i <= 11; i++) { %>
+      <tr>
+        <td><%= i %></td>
+        <td><%= teamNameMap[i] %></td>
+        <td><%= votes[i] %></td>
+      </tr>
+      <% } %>
+    </table>
+  </body>
+</html>
+      
