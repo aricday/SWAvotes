@@ -1,6 +1,7 @@
 # SWAvotes
 Voter repo for sms survey
 
+## Run Locally
 1. Clone repo and collect .env variables
 
 2. Install dependencies
@@ -16,5 +17,20 @@ $ source .env
 ```
 $ ./voteResults.sh
 ```
-## Results Script
+## Results Local Script
 ![Show me the votes!](votes.png)
+
+## Run in AWS
+```
+$ npm install serverless
+
+$ serverless deploy -s dev
+
+```
+
+## Browse the Results Page
+![Show me the votes!](results.png)
+
+## Call to Action - Vote By Text!
+![VOTE!](votePPT.png)
+
