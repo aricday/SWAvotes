@@ -1,5 +1,5 @@
 ---
-frameworkVersion: "=2.44.0"
+frameworkVersion: "=2.63.0"
 service: swavotes
 custom:
   stage: ${opt:stage, 'dev'}
@@ -10,7 +10,7 @@ provider:
   runtime: nodejs12.x
   region: us-east-1
 
-  role: arn:aws:iam::741218081458:role/serverless-vpc-role
+  role: arn:aws:iam::962951102042:role/serverless-vpc-role
   apiKeys:
     - ${self:custom.stage}-swavotes
 
