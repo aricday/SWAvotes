@@ -7,7 +7,7 @@ custom:
 provider:
   name: aws
   stage: ${self:custom.stage}
-  runtime: nodejs12.x
+  runtime: nodejs22.x
   region: us-east-1
 
   role: arn:aws:iam::962951102042:role/serverless-vpc-role
